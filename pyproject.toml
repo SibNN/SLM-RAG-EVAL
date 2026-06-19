@@ -1,0 +1,78 @@
+[project]
+name = "vsbench"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.12.0",
+    "bert-score>=0.3.13",
+    "dacite>=1.9.2",
+    "deepeval>=3.7.6",
+    "dvc>=3.66.1",
+    "dvc-ssh>=4.2.2",
+    "matplotlib>=3.10.8",
+    "openai>=2.11.0",
+    "pandas>=2.3.3",
+    "pingouin>=0.6.0",
+    "pre-commit>=4.5.0",
+    "pymorphy3>=2.0.6",
+    "pytest>=9.0.2",
+    "rich>=14.2.0",
+    "rouge>=1.0.1",
+    "scikit-learn>=1.8.0",
+    "seaborn>=0.13.2",
+    "sentence-transformers>=5.2.0",
+    "spacy>=3.8.11",
+    "tabulate>=0.9.0",
+    "torch==2.7.1",
+    "vllm==0.10.1",
+]
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+  "I",    # isort
+  "E",    # pycodestyle
+  "W",    # pycodestyle
+  "F",    # pyflakes
+  "N",    # pep8-naming
+  "D",    # pydocstyle
+  "PL",   # pylint
+  "S",    # flake8-bandit
+  "Q",    # flake8-quotes
+  "B",    # flake8-bugbear
+  "SIM",  # flake8-simplify
+  "UP",   # pyupgrade
+  "ANN",  # annotations
+]
+ignore = [
+  "D105",     # undocumented-magic-method
+  "S501",     # no ssl verification
+]
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["D104"]  # undocumented-public-package
+"**/{tests}/*" = [
+  "S101",     # allow-assert
+  "PLR2004",  # magic-value-comparison
+  "E731",     # lambda-assignment
+  "D100",     # undocumented-public-module
+  "D101",     # undocumented-public-class
+  "D102",     # undocumented-public-method
+  "D103",     # undocumented-public-function
+  "D104",     # undocumented-public-package
+]
+
+[tool.ruff.lint.isort]
+force-single-line = false
+
+[tool.yamlfix]
+line_length = 120
+explicit_start = false
+sequence_style = "keep_style"
+whitelines = 1
+section_whitelines = 1

@@ -1,0 +1,22 @@
+datasets:
+  grounded_rag:
+    input_path: Grounded-RAG-QA-RU/data
+
+  ru_rag_test:
+    input_path: ru_rag_test_dataset/ru_rag_test_dataset.pkl
+
+  sberquad:
+    input_path: sberquad/sberquad
+
+  danetqa:
+    input_path: DaNetQA/DaNetQA
+
+  croc:
+    input_path: croc
+
+  tape_multiq:
+    input_path: tape/dummy/raw/multiq
+
+  ontico:
+    input_path: ontico
+    knowledge_base_dir: ontico/knowledge_base

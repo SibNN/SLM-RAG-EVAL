@@ -1,0 +1,33 @@
+generator:
+  host: localhost
+  port: 1337
+  gpu_util: 0.7
+  max_model_len: 20000
+  thinking: false
+  name: Qwen/Qwen3-4B
+  max_tokens: 5000
+  temperature: 0.7
+
+llm_judge:
+  host: localhost
+  port: 1337
+  gpu_util: 0.95
+  max_model_len: 12000
+  thinking: false
+  name: Qwen/Qwen3-4B
+
+api_generator:
+  api_key: YOUR_API_KEY
+  base_url: https://api...ru/v1
+  thinking: false
+  name: openai/gpt-5-mini
+  max_tokens: 5000
+
+api_llm_judge:
+  api_key: YOUR_API_KEY
+  base_url: https://api...ru/v1
+  thinking: false
+  name: openai/gpt-5-mini
+
+embedder:
+  name: google/embeddinggemma-300m
