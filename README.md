@@ -6,7 +6,7 @@ This repository contains code and supporting materials for the paper **“Little
 
 The public reproducibility package is available on Zenodo:
 
-https://doi.org/10.5281/zenodo.20771851
+https://doi.org/10.5281/zenodo.20771850
 
 Download `data.zip` from Zenodo and extract it into the repository root so that the `data/` directory has the following structure:
 
